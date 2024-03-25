@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursinformation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="courses">
+        <h2>Lägg till en kurs</h2>
+        <div class="input-container">
+            <input type="text" placeholder="Kurskod" id="code">
+            <input type="text" placeholder="Kursnamn" id="name">
+            <select id="progression">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+            <input type="text" placeholder="URL till kursplanen" id="syllabus">
+        </div>
+        <div class="addbtn">
+            <button id="addCourseBtn">Lägg till kurs</button>
+        </div>
+        <div class="border"></div>
+        <h2>Mina tillagda kurser</h2>
+        <div class="coursesdisplayed">
+            <ul id="courseList"></ul>
+        </div>
+    </div>
+    <div id="updateCourseModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <input type="text" placeholder="Kurskod" id="updateCode">
+            <input type="text" placeholder="Kursnamn" id="updateName">
+            <select id="updateProgression">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+            <input type="text" placeholder="URL till kursplanen" id="updateSyllabus">
+            <button id="updateCourseBtn">Ändra kurs</button>
+        </div>
+    </div>
+
+    <script src="js/main.ts" type="module"></script>
+</body>
+
+</html>
